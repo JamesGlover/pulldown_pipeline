@@ -1,4 +1,15 @@
 GIT
+  remote: git+ssh://git@github.com/JamesGlover/sequencescape-client-api.git
+  revision: 646c720b21f9362badd22b09acc139e2d4b1db7e
+  branch: 43834837_pre_defined_pre_capture_pooling
+  specs:
+    sequencescape-client-api (0.1.0)
+      activemodel (~> 3.0.0)
+      activesupport (~> 3.0.0)
+      i18n
+      yajl-ruby (~> 1.1.0)
+
+GIT
   remote: git+ssh://git@github.com/sanger/psd_logger.git
   revision: dd2d634114df75b1d8535715c169a7fc99521389
   specs:
@@ -10,17 +21,6 @@ GIT
   specs:
     sanger_barcode (0.0.1)
       savon (= 0.9.2)
-
-GIT
-  remote: git+ssh://git@github.com/sanger/sequencescape-client-api.git
-  revision: cf8855815220aa97d255cf906586f852883e0751
-  branch: production
-  specs:
-    sequencescape-client-api (0.0.1)
-      activemodel (~> 3.0.0)
-      activesupport (~> 3.0.0)
-      i18n
-      yajl-ruby (~> 1.1.0)
 
 GEM
   remote: http://rubygems.org/
@@ -154,6 +154,6 @@ DEPENDENCIES
   rake (~> 0.9.2)
   ruby-debug19
   sanger_barcode!
-  sequencescape-client-api!
+  sequencescape-client-api (>= 0.1.0)!
   state_machine (~> 1.0.1)
   thin
